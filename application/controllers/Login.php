@@ -5,7 +5,9 @@ class Login extends CI_Controller{
 	
 	}
 	function index(){
-		$this->load->view('login/index');
+		$this->db->where('id',1);
+		$data['blog'] = $this->db->get('blog')->row_array();
+		$this->load->view('login/index',$data);
 	}
 	function auth(){
 		$email = $this->input->post('email');
