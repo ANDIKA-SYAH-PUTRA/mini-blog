@@ -9,7 +9,7 @@ include 'tree/sidebar.php';
 		    	<a href="<?php echo base_url()?>blog" class="btn btn-primary"><i class="arrow-prev fas fa-long-arrow-alt-left"></i> Kembali</a><hr>
 			    <header class="blog-post-header">
 				    <h2 class="title mb-2"><?=$a->judul?></h2>
-				    <div class="meta mb-3"><span class="date">Publikasi : <?=$a->waktu?></span><span class="comment"><a href="<?php echo base_url()?>blog/kategorii/<?=$a->kategori?>"><?=$a->kategori?></a> <span class="comment"> Penulis : <?=$a->penulis?></span></div>
+				    <div class="meta mb-3"><span class="date">Publikasi : <?=$a->waktu?></span><span class="comment"><a href="<?php echo base_url()?>blog/ks/<?=$a->kategori?>"><?=$a->kategori?></a></span> <span class="date"> Penulis : <?=$a->penulis?></span></div>
 			    </header>
 			    
 			    <div class="blog-post-body">

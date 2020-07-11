@@ -24,6 +24,7 @@ class Login extends CI_Controller{
 				'email' => $email,
 				'status' => "login",
 				'role' => $data['role'],
+				'nama' => $data['nama'],
 				'id_user' => $data['id_user']
 				);
 			$this->session->set_userdata($data_session);
