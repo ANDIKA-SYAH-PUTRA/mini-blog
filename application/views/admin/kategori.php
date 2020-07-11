@@ -32,7 +32,7 @@ include 'tree/navbar.php';
                         </div>
                     </div>
                 </div>
-                  <table id="example" class="display" style="widows: 100%">
+                  <table id="example" class="table table-striped table-bordered" style="width:100%">
                         <thead>                        
                             <tr align="center">
                             <th>No</th>

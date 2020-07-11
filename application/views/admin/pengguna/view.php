@@ -2,7 +2,7 @@
             <main class="dash-content" >
                 <div class="container-fluid">
                     <a href="<?php echo base_url()?>admin/user_tambah" class="btn btn-primary"><i class="fas fa-plus"></i>  Tambah Pengguna</a> <br><br>
-                    <table id="example" class="display" style="widows: 100%">
+                    <table id="example" class="table table-striped table-bordered" style="width:100%">
                         <thead>                        
                             <tr align="center">
                             <th>No</th>
@@ -17,7 +17,7 @@
                         <?php  $no =1 ;foreach ($art->result() as $a) { ?>
                         <tr align="center">
                             <td><?php echo $no++?></td>
-                            <td><img src="<?=$a->foto?>"></td>
+                            <td><img width="70px" src="<?php echo base_url()?>uploads/images/<?=$a->foto?>"></td>
                             <td><?=$a->nama?></td>
                             <td><?=$a->username?></td>
                             <td><?=$a->password?></td>

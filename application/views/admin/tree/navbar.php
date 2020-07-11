@@ -24,8 +24,8 @@
                             <i class="fas fa-user"></i>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                            <a class="dropdown-item" href="#!">Profile</a>
-                            <a class="dropdown-item" href="login.html">Logout</a>
+                            <a class="dropdown-item" href="<?php echo base_url()?>admin/profile">Profile</a>
+                            <a class="dropdown-item" href="<?php echo base_url()?>login/logout">Logout</a>
                         </div>
                     </div>
                 </div>

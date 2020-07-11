@@ -2,8 +2,10 @@
 <body>
    
     <?php
-    $user = 1;
-    if ($user == 1) {
+    
+    $role = $this->session->userdata('role');
+
+    if ($role == 0) {
        include 's_admin.php';
     }else{
         include 's_user.php';

@@ -2,7 +2,7 @@
             <main class="dash-content" >
                 <div class="container-fluid">
                     <a href="<?php echo base_url()?>admin/artikel_tambah" class="btn btn-primary"><i class="fas fa-plus"></i>  Tambah Artikel</a> <a href="<?php echo base_url()?>admin/kategori" class="btn btn-secondary"><i class="fas fa-list"></i>  Kategori</a><br><br>
-                    <table id="example" class="display" style="widows: 100%">
+                    <table id="example" class="table table-striped table-bordered" style="width:100%">
                         <thead>                        
                             <tr align="center">
                             <th>No</th>
@@ -17,7 +17,7 @@
                         <?php  $no =1 ;foreach ($art->result() as $a) { ?>
                         <tr align="center">
                             <td><?php echo $no++?></td>
-                            <td><img src="<?=$a->foto?>"></td>
+                            <td><img width="50px" src="<?php echo base_url()?>uploads/images/<?=$a->foto?>" ></td>
                             <td><?=$a->judul?></td>
                             <td><?php echo substr($a->konten, 0,50)?></td>
                             <td><?=$a->kategori?></td>

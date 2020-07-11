@@ -3,8 +3,23 @@ include 'tree/head.php';
 include 'tree/sidebar.php';
 include 'tree/navbar.php';
 ?>
+<?php 
+
+$email = $this->session->userdata('email');
+
+$this->db->where('email',$email);
+$data = $this->db->get('users');
+
+foreach ($data->result() as $u) {
+    # code...
+?>
             <main class="dash-content">
                 <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                    SELAMAT DATANG : <?=$u->nama?> <?}?> <br><br>
+                    </div>
+                    </div>
                     <div class="row dash-row">
                         <div class="col-xl-4">
                             <div class="stats stats-primary">

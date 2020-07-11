@@ -14,7 +14,7 @@
                                 </div>
                                 <?php foreach($art->result() as $a) { ?>
                                 <div class="card-body ">
-                                    <form method="post" action="">
+                                     <?php echo form_open_multipart('');?>
                                         <div class="form-row">
                                             <div class="form-group col-md-6">
                                                 <label for="inputEmail4">Judul</label>
@@ -32,7 +32,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="inputAddress">Foto</label>
-                                            <input type="file" class="form-control" id="inputAddress" placeholder="1" name="foto">
+                                            <input type="file" class="form-control"  placeholder="1" name="foto">
                                         </div>
                                         <div class="form-group">
                                             <label for="inputAddress2">Konten</label>

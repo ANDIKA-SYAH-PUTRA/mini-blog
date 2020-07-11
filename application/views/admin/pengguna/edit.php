@@ -13,7 +13,7 @@
                                     <div class="easion-card-title"> Edit Pengguna </div>
                                 </div><?php foreach($user->result() as $u) {?>
                                 <div class="card-body ">
-                                    <form method="post" action="">
+                                    <?php echo form_open_multipart('');?>
                                         <div class="form-row">
                                             <div class="form-group col-md-6">
                                                 <label for="inputEmail4">Nama</label>

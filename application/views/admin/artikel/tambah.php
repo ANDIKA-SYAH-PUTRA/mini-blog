@@ -13,11 +13,12 @@
                                     <div class="easion-card-title"> Tambah Artikel </div>
                                 </div>
                                 <div class="card-body ">
-                                    <form method="post" action="">
+                                    <?php echo form_open_multipart('');?>
                                         <div class="form-row">
                                             <div class="form-group col-md-6">
                                                 <label for="inputEmail4">Judul</label>
                                                 <input type="text" class="form-control" id="inputEmail4" placeholder="Judul Artikel" name="judul">
+                                                <input type="hidden" name="penulis" value="<?php $author ='admin'; echo $author ;?>">
                                             </div>
                                             <div class="form-group col-md-6">
                                                 <label for="inputState">Kategori</label>

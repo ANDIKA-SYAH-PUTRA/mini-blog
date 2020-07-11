@@ -27,10 +27,10 @@
                     <a href="#!" class="dash-nav-item dash-nav-dropdown-toggle">
                         <i class="fas fa-users"></i>Penguna</a>
                     <div class="dash-nav-dropdown-menu">
-                        <a href="<?php echo base_url()?>admin/user" class="dash-nav-dropdown-item">Daftar Pengguna</a>
+                        <a href="<?php echo base_url()?>admin/user" class="dash-nav-dropdown-item">List User</a>
                     </div>
                     <div class="dash-nav-dropdown-menu">
-                        <a href="<?php echo base_url()?>admin/user_tambah" class="dash-nav-dropdown-item">Tambah Pengguna</a>
+                        <a href="<?php echo base_url()?>admin/user_tambah" class="dash-nav-dropdown-item">Add User</a>
                     </div>
                 </div>
                 

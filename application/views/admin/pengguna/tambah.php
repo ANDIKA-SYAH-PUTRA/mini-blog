@@ -12,7 +12,7 @@
                                     <div class="easion-card-title"> Tambah Pengguna </div>
                                 </div>
                                 <div class="card-body ">
-                                    <form method="post" action="">
+                                   <?php echo form_open_multipart('');?>
                                         <div class="form-row">
                                             <div class="form-group col-md-6">
                                                 <label for="inputEmail4">Nama</label>
@@ -30,7 +30,7 @@
                                                 <label for="inputState">Email</label>
                                                  <input type="text" class="form-control" id="inputEmail4" placeholder="Email Valid" name="email">
                                             </div>
-                                             <div class="form-group col-md-6">
+                                            <div class="form-group col-md-6">
                                                 <label for="inputEmail4">Foto</label>
                                                 <input type="file" class="form-control" id="inputEmail4" placeholder="Judul Artikel" name="foto">
                                             </div>
@@ -42,9 +42,6 @@
                                                  </select>
                                             </div>
                                         </div>
-                                       
-                                      
-                        
                                         <button type="submit" name="simpan" class="btn btn-primary">Simpan</button>
                                     </form>
                                 </div>
